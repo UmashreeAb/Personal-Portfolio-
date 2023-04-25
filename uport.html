@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" class="">
+                <ul id="sidemenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#service">Service</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <!-- ---add cross icon--- -->
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <!-- ---add menu icon--- -->
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p> Web Developer</p>
+                <h1>Hi, I'm <span>Umashree Ab</span> <br>From North Karnataka</h1>
+            </div>
+        </div>
+    </div>
+    <div class="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="uma.jpg">
+                </div>
+                     <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p><span><b>I'm Umashree and I'm a Student</b></span><br>
+                        I'm a final year CS student at BMSCE looking for web developer roles!.
+                        </p>
+                        <div class="tab-titles">
+                            <p  class="tag-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p  class="tag-links" onclick="opentab('education')">Education</p>
+                            <p  class="tag-links" onclick="opentab('experiance')">Experiance</p>
+                        </div>
+                         <!-- write here project name -->
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Html</span></li>
+                                <li><span>Css</span></li>
+                                <li><span>Javascript</span></li>
+                                <li><span>React</span></li>
+                            </ul>
+                        </div>
+                         <!-- write about Education -->
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2017</span><br>XI From Govt Girl's Highn School</li>
+                                <li><span>2020</span><br>Diploma Govt Women's Polytecnic</li>
+                                <li><span>2023</span><br>BMS Collage of Engineering Bangalore</li>
+                            </ul>
+                        </div>
+                         <!-- write about experiance-->
+                        <div class="tab-contents" id="experiance">
+                            <ul>
+                                <li><span>I did a Projects on</span></li>
+                                <li><span>Web Devlopment</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+          </div>
+    </div>
+    <!----------------------services--------------> 
+    <div class="Services">
+        <div class="container">
+            <!-- <h1 class="sub-title">My Services</h1> -->
+            <h1 class="sub-title">My Projects</h1>
+            <div class="service-list">
+            <div>
+                <!-- <i class="fas fa-code"></i> -->
+                <h2>Phography Website</h2>
+                <p>A platform for photographers to upload their work on the portal for global distribution.This platform also 
+                provided photographers to buy, rent or sell their photography equipment on the portal.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Spotify Clone</h2>
+                <p>This is the music streaming platform that helps us to gain advantages well-paid streaming industry.This music 
+                player will have all the features like where the users can add, play, pause, and seek the songs that been added. 
+                </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <!-- <i class="fas fa-code"></i> -->
+                <h2>Personal Portfolio</h2>
+                <p>This website is about personal / resume website which includes details of a person.This also provides the 
+                information about what a person will do, what service you may offer, and how to contact you or your company.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <!-- <i class="fas fa-code"></i> -->
+                <h2>Medical Cost Prediction</h2>
+                <p>We use the dataset that contains various data like age, sex, children,smoker, region etc.Here WE use Linear 
+                Regression,Logistic Regression used in a classifier to make the predictions.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- <-------- Portfolio----->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="image1.jpeg">
+                <div class="layer">
+                    <h3>photography Website</h3>
+                    <p>A platform for photographers to upload their work on the portal for global distribution.This platform also 
+                    provided photographers to buy, rent or sell their photography equipment on the portal.</p>
+                    <a href="#"></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="image2.jpg">
+                <div class="layer">
+                    <h3>Spotify Clone</h3>
+                    <p>This is the music streaming platform that helps us to gain advantages well-paid streaming industry.This 
+                    music player will have all the features like where the users can add, play, pause, and seek the songs that 
+                    been added. </p>
+                    <a href="#"></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="uma.jpg">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>This website is about personal / resume website which includes details of a person.This also provides the 
+                    information about what a person will do, what service you may offer, and how to contact you or your 
+                    company.</p>
+                    <a href="#"></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- <----------------------Contact------------- -->
+<div class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>contact@uma.com</p>
+                <p><i class="fas fa-paper-plane"></i>9740186653</p>
+                <div class="social-icons">
+                    <a href="http://facebook.com/"><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-Twitter-squre"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-Linkedin"></i></a>
+                </div>
+                <a href="uma cv.pdf"  download class="btn btn2">Dowload CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ 2023 - All right reserverd - Umashree Ab <i class="fas fa-heart"></i></p>
+    </div>
+</div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+  
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("actve-link");
+            document.getElementById(tabname).classList.add("active-tab");
+    }
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
